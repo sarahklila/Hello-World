@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("enter a number");
+            double  num1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("enter an operator");
+
+            string Op = Console.ReadLine();
+            
+                Console.Write("enter a number");
+                double num2 = Convert.ToDouble(Console.ReadLine());
+             
+            if(Op == "+")
+            {
+                Console.WriteLine(num1 + num2);
+
+            }
+            else if (Op== "-")
+            {
+                Console.WriteLine(num1 - num2);
+
+            }
+            else if (Op=="*")
+            {
+                Console.WriteLine(num1 * num2);
+            }
+            else if (Op == "/")
+            {
+                Console.WriteLine(num1 / num2);
+            }
+            else
+            {
+                Console.WriteLine("invalid operator");
+            }
+
+            Console.ReadLine();
+        
+        }
+    }
+}
